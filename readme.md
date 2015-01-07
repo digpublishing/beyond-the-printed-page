@@ -8,18 +8,16 @@ Currently this site is in active development pending a relaunch.
 
 
 ## Dependencies
+- Jekyll (v2.0+) and GH Pages
 - jQuery 2.1.3 (included in repo)
 - Normalize.scss (included in repo)
-- Bourbon and Neat (install before using)
+- Bourbon and Neat (included in repo)
 
 ### Installation
 ```shell
 # in project root
 bundle install
 
-# in assets/styles/lib
-bourbon install
-neat install
 ```
 
 
