@@ -1,6 +1,11 @@
-# Jekyll Starter repo
+# Beyond the Printed Page
 
-This is a bare-bones Jekyll template for starting new projects. The file structure reflects my preferred way of working: neatly-organized assets directory, Sass preprocessing, Bourbon, Neat, and Bitters for front-end framework, and jQuery for basic JS needs. No fiddling around with NPM, Bower, Grunt, etc.
+This repo houses the source code for the soon-to-be-relaunched Beyond the Printed Page digital publishing blog.
+
+This site is a collaborative effort between the Digital Publications team at the Getty and other arts/publishing professionals.
+
+Currently this site is in active development pending a relaunch. 
+
 
 ## Dependencies
 - jQuery 2.1.3 (included in repo)
