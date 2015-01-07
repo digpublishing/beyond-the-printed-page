@@ -28,9 +28,9 @@ sass:
 # Collections
 #==================================
 collections:
-  projects:
+  issues:
     output: true
-    permalink: /projects/:path/
+    permalink: /issues/:path/
 
 
 # Front-matter Defaults
