@@ -3,7 +3,7 @@
 title: Beyond the Printed Page
 email: egardner@getty.edu
 description: Beyond the Printed Page
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/beyond-the-printed-page" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # Build settings
