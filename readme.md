@@ -20,6 +20,14 @@ bundle install
 
 ```
 
+### Development
+```shell
+# in project root run
+bundle exec jekyll serve
+# then view changes at localhost:4000 in browser
+```
+
+
 
 JS compiles into a single `main.js` file (using Jekyll's new `include_relative` tag). SCSS compiles into `main.css` (note that source files require YAML front-matter in both cases).
 
