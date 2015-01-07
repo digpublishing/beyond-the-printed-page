@@ -51,6 +51,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "projects"
+      type: "issues"
     values:
       layout: "default"

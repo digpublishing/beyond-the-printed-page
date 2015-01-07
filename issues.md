@@ -2,7 +2,7 @@
 title: Issues
 Permalink: /issues/
 ---
-Projects index goes here.
+Issues index goes here.
 
 {% for issue in site.issues %}
   <ul>
