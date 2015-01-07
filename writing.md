@@ -1,5 +1,6 @@
 ---
-title: Writing
+title: Articles
+permalink: /articles/
 ---
 
 {% for post in site.posts %}
