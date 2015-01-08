@@ -1,4 +1,4 @@
 ---
-title: Issue 2
+title: Issue Title Goes Here
 number: 2
 ---
