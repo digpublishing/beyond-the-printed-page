@@ -23,7 +23,7 @@ permalink: pretty
 #==================================
 sass:
   sass_dir: assets/styles/_scss  # default is _sass
-  style: compressed	 # set to compressed for production
+  style: compressed # set to compressed for production
 
 # Collections
 #==================================
@@ -47,10 +47,10 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      layout: "default"
+      layout: "post"
   -
     scope:
       path: ""
       type: "issues"
     values:
-      layout: "default"
+      layout: "issue"

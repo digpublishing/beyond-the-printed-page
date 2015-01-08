@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h6>In This Issue</h6>
+{% if site.data.issues[page.number] %}
+  <ul>
+  {% for article in site.data.issues[page.number].contents %}
+    <li>
+      <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
+      <br /><span>{{article.author}}</span>
+    </li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No articles exist in this issue yet.</p>
+{% endif %}
