@@ -6,10 +6,14 @@
     {% include nav.html %}
     <div class="content">
       <header class="article-header">
-        {% if page.categories %}
-          <h6 class="meta">
-          {{ page.categories.first | replace '-', ' '}}
-          </h6>
+        {% if page.number %}
+          <h3 class="meta">Issue {{page.number}} | {{page.date}}</h3>
+          <br>
+        {% elsif page.issue %}
+          <a href="{{site.baseurl}}/issues/issue-{{page.issue}}">
+            <h6 class="meta">Issue {{page.issue}}</h6>
+          </a>
+          <br>
         {% endif %}
         <h1 class="title">{{page.title}}</h1>
         {% if page.subtitle %}
