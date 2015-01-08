@@ -19,32 +19,15 @@ h6 {
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
-h1 {
-  font-size: $h1-font-size;
-}
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
 
-h2 {
-  font-size: $h2-font-size;
-}
-
-h3 {
-  font-size: $h3-font-size;
-}
-
-h4 {
-  font-size: $h4-font-size;
-}
-
-h5 {
-  font-size: $h5-font-size;
-}
-
-h6 {
-  font-size: $h6-font-size;
-}
-
-p {
-  margin: ($base-spacing / 2) 0;
+p { 
+  margin: ($base-spacing / 2) 0; 
 }
 
 a {
@@ -62,14 +45,6 @@ a {
   }
 }
 
-article a {
-  font-weight: bold;
-}
-
-article ul {
-  list-style-type: disc
-}
-
 ul {
   list-style-type: none
 }
@@ -80,10 +55,6 @@ hr {
   border-right: none;
   border-top: none;
   margin: $base-spacing 0;
-}
-
-article ul {
-  margin: ($base-spacing / 2) 0;
 }
 
 p code {
@@ -117,3 +88,19 @@ cite {
   }
 }
 
+// other styles
+article {
+  a { font-weight: bold; }
+  ul { list-style-type: disc }
+  ul, ol {
+    margin: ($base-spacing / 2) 0;
+    padding: 0 0 0 1.5rem;
+    list-style-position: outside;
+  }
+}
+
+.meta, .author, .date {
+  font-family: "Lato";
+  font-weight: normal;
+  color: lighten($base-font-color, 25);
+}
