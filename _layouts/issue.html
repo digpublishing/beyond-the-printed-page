@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-<h6>In This Issue</h6>
+<h3>Contents</h3>
+<br>
 {% if site.data.issues[page.number] %}
-  <ul>
-  {% for article in site.data.issues[page.number].contents %}
-    <li>
-      <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-      <br /><span>{{article.author}}</span>
+  {% assign sorted_articles = site.data.issues[page.number].contents | sort: 'rank' %}
+  <ul class="articles">
+  {% for article in sorted_articles %}
+    <li {% if article.rank == 00 %} class="intro" {% endif %}>
+      {% if article.rank == 00 %}<h4 class="meta">Introduction</h4>{% endif %}
+      <a href="{{site.baseurl}}{{article.url}}"><h4>{{article.title}}</h4></a>
+      <h6>{{article.author}}</h6>
+      <p>{{article.desc}}</p>
     </li>
   {% endfor %}
   </ul>
