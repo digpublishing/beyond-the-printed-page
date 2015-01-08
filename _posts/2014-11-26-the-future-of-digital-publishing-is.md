@@ -1,7 +1,8 @@
 ---
 title: The Future Of Digital Publishing Is …
 author: Greg Albers
-date: November 26, 2014
+issue: 1
+permalink: the-future-of-digital-publishing-is
 ---
 
 Web books, html5 books, web apps, open ebooks—whatever you call them, I am a proponent of these approaches to digital publishing and I’ve been happy to see they are gaining support in other places as well. Still, the big question remains: What do they look like, and how might we make them?
