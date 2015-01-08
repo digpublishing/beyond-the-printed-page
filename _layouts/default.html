@@ -6,18 +6,24 @@
     {% include nav.html %}
     <div class="content">
       <header class="article-header">
+        {% if page.categories %}
+          <h6 class="meta">
+          {{ page.categories.first | replace '-', ' '}}
+          </h6>
+        {% endif %}
         <h1 class="title">{{page.title}}</h1>
         {% if page.subtitle %}
           <h4 class="subtitle">{{page.subtitle}}</h4>
+        {% endif %}
+        {% if page.author %}
+          <h5 class="author">By {{page.author}}</h5>
         {% endif %}
       </header>
     </div>
   </div>
   <div id="main">
     <div class="content">
-      <article>
-        {{content}}
-      </article>
+      {{content}}
     </div>
   </div>
 <body>
