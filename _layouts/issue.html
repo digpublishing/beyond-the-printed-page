@@ -11,7 +11,7 @@ layout: default
     <li {% if article.rank == 00 %} class="intro" {% endif %}>
       {% if article.rank == 00 %}<h4 class="meta">Introduction</h4>{% endif %}
       <a href="{{site.baseurl}}{{article.url}}"><h4>{{article.title}}</h4></a>
-      <h6>{{article.author}}</h6>
+      <h6>{{article.author.display_name}}</h6>
       <p>{{article.desc}}</p>
     </li>
   {% endfor %}
