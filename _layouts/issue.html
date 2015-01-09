@@ -3,8 +3,9 @@ layout: default
 ---
 <h3>Contents</h3>
 <br>
-{% if site.data.issues[page.number] %}
-  {% assign sorted_articles = site.data.issues[page.number].contents | sort: 'rank' %}
+{% capture current_issue %}issue-{{page.number}}{% endcapture %}
+{% if site.categories[current_issue] %}
+  {% assign sorted_articles = site.categories[current_issue] | sort: "rank" %}
   <ul class="articles">
   {% for article in sorted_articles %}
     <li {% if article.rank == 00 %} class="intro" {% endif %}>

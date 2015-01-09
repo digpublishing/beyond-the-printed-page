@@ -17,7 +17,7 @@ exclude: [Gemfile, Gemfile.lock, readme.md]
 
 # Permalinks
 #==================================
-permalink: pretty
+permalink: /:categories/:title
 
 # Assets
 #==================================
@@ -30,7 +30,7 @@ sass:
 collections:
   issues:
     output: true
-    permalink: /issues/:path/
+    permalink: /:path/
 
 
 # Front-matter Defaults

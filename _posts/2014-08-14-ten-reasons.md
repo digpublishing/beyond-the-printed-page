@@ -1,8 +1,8 @@
 ---
 title: "10 Reasons Why You Should Be Thinking About HTML for Digital Publications"
 author: Justin Putney
-issue: 1
-permalink: 10-reasons-why-you-should-be-thinking-about-HTML-for-digital-publications
+category: issue-1
+rank: 03
 ---
 ## Advantages of Using HTML in Digital Publishing
 

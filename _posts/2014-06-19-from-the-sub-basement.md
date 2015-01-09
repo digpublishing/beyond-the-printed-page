@@ -1,8 +1,8 @@
 ---
 title: "From the Sub-Basement to the Imperial Ballroom, Digital Publishing is Moving on up"
 author: Greg Albers
-issue: 1
-permalink: from-the-sub-basement-to-the-ballroom
+category: issue-1
+rank: 02
 ---
 At this year’s National Museum Publishing Seminar, I moderated and spoke on a panel on digital publishing. Joining me were e-book production artist Tina Henderson, whose current obsession is “dual-orientation multi-touch ibooks”; Elisa Leshowitz, who works with a terrific roster of client publishers and oversees the growing e-book program for ARTBOOK | D.A.P.; and Edyta Lewicka of Potion design who, with Yale University Press and the Josef and Anni Albers Foundation produced the amazing Interaction of Color app released with much acclaim last year.
 

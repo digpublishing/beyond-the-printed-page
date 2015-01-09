@@ -1,8 +1,8 @@
 ---
 title: "Practical Matters: Digital Publishing Tools For Art Book Publishers"
 author: Tina Henderson
-issue: 1
-permalink: practical-matters-digital-publishing-tools
+category: issue-1
+rank: 01
 ---
 
 With the increasing popularity of ebooks and the proliferation of ereaders and tablets, it has become routine to say that the past few years have been disruptive to the publishing industry. Though many publishers have been hesitant to jump into “the digital space,” art book publishers and museum publication departments have been among the slowest to embrace ebooks and digital publications.

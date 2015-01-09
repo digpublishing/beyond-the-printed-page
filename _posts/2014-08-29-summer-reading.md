@@ -1,8 +1,8 @@
 ---
 title: "Summer Reading"
 author: Amy Weber Parkolap
-issue: 1
-permalink: summer-reading
+category: issue-1
+rank: 04
 ---
 The Getty Foundation’s Online Scholarly Catalogue Initiative reached an important milestone this past year for many of the museums who participated in it: completion! (For more information about OSCI, see the Getty Foundation’s OSCI page.) And while I’ve personally been steeped in the Art Institute of Chicago’s OSCI production for the past 3 years, it’s been refreshing this past month to take a step back and to survey the breadth—both in subject matter and presentation—of the scholarly collection catalogues that are now available from this group of museums.  
 
