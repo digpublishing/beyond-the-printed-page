@@ -1,8 +1,8 @@
 ---
 title: "Empathy in Art Book Publishing"
 author: Robert Weisberg
-issue: 1
-permalink: empathy-in-art-book-publishing
+category: issue-1
+rank: 05
 ---
 Empathy as a concept has made increasing inroads into the content field. Dana Mitroff Silvers wrote an excellent piece on “design thinking,” a particular take on visitor experience that her firm spearheaded in their work for the SFMoMA relaunch and have taken it on the road, as it were. (The article has links to several other interesting articles on empathy as part of museum visitor experience, targeting the needs of visitors as individuals.)
 

@@ -1,6 +1,6 @@
 ---
 title: Issues
-Permalink: /issues/
+permalink: /issues/
 ---
 <ul>
   {% for issue in site.issues %}

@@ -9,9 +9,10 @@
         {% if page.number %}
           <h3 class="meta">Issue {{page.number}} | {{page.date}}</h3>
           <br>
-        {% elsif page.issue %}
-          <a href="{{site.baseurl}}/issues/issue-{{page.issue}}">
-            <h6 class="meta">Issue {{page.issue}}</h6>
+        {% elsif page.category %}
+          {% capture issue_num %} {{ page.category | remove_first:'issue-'  }} {% endcapture %}
+          <a href="{{site.baseurl}}/{{page.category}}">
+            <h6 class="meta">Issue {{issue_num}}</h6>
           </a>
           <br>
         {% endif %}
