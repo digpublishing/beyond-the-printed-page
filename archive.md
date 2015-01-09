@@ -1,6 +1,6 @@
 ---
-title: Articles
-permalink: /articles/
+title: Archive
+permalink: /archive/
 ---
 
 <ul class="articles">
