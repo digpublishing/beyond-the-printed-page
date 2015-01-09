@@ -1,5 +1,5 @@
 ---
-title: "Impractical Matters: Digital Publishing Tools For Art Book Publishers"
+title: "Practical Matters: Digital Publishing Tools For Art Book Publishers"
 author: Tina Henderson
 category: issue-1
 rank: 01
