@@ -50,3 +50,9 @@ ul.articles li.intro {
     @include size(100%);
   }
 }
+
+// Disqus styles
+#disqus_thread .post-message {
+  font-family: sans-serif;
+}
+
