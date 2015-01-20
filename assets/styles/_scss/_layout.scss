@@ -1,39 +1,39 @@
 // basic page margins
-div.content { 
-  padding: 1rem;
+.content { 
   @include outer-container;
+  padding: 1rem;
   @include media ($medium-screen-up) { padding: 1rem 2rem; }
 }
 
-div#top { 
-  color: white;
+#top { 
+  background-color: darken($base-accent-color, 24);
+  color: #fff;
   padding-top: 1rem;
   width: 100%;
-  background-color: darken($base-accent-color, 24);
 }
 
-header.article-header {
-  margin-top: 0rem ;
+.article-header {
   margin-bottom: $base-font-size * 2;
+  margin-top: 0;
+
   h1 { margin-top: 1rem; }
-  .meta, .author {color: white; }
+  .meta, 
+  .author {color: #fff; }
 }
 
 // responsive layout
 @include media ($medium-screen-up) {
-  header.article-header { margin-top: $base-font-size * 4; }
+  .article-header { margin-top: $base-font-size * 4; }
 }
 
 @include media ($large-screen-up) {
-  header.article-header { margin-top: $base-font-size * 5; }
+  .article-header { margin-top: $base-font-size * 5; }
 }
 
 // article list
-ul.articles li { 
+.articles li { 
   margin-bottom: $base-font-size * 2; 
-}
-ul.articles li.intro {
-  margin-bottom: $base-font-size * 3;
+  .intro { margin-bottom: $base-font-size * 3; }
 }
 
 // responsive video
@@ -46,7 +46,7 @@ ul.articles li.intro {
   embed,
   object,
   iframe {
-    @include position(absolute, 0px null null 0px);
+    @include position(absolute, 0 null null 0);
     @include size(100%);
   }
 }

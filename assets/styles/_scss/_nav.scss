@@ -1,47 +1,50 @@
 // mobile nav
-div#nav {
+#nav {
   font-family: $sans-serif;
   letter-spacing: 1px;
 }
 
-a.logo {
-  font-size: $base-font-size * 1.125;
+.logo {
   @include span-columns(4 of 4);
+  font-size: $base-font-size * 1.125;
   text-align: center;
 }
 
 nav {
   @include span-columns(4 of 4);
   ul {
-    font-size: $base-font-size * 0.9;
+    font-size: $base-font-size * .9;
     list-style-type: none;
+    margin: .25rem auto 0;
     text-align: center;
-    margin: 0.25rem auto 0rem;
-  }
-  ul li {
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    
+    li {
+      display: inline-block;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
 }
 
 // desktop nav
 @include media ($medium-screen-up) {
-  a.logo {
+  .logo {
     @include span-columns(3 of 8);
     text-align: left;
   }
+  
   nav {
     @include span-columns(5 of 8);
     ul {
-      font-size: $base-font-size;
       float: right;
+      font-size: $base-font-size;
       margin-top: 0;
-    }
-    ul li {
-      float: left;
-      margin-left: 2rem;
-      margin-right: 0;
+
+      li {
+        float: left;
+        margin-left: 2rem;
+        margin-right: 0;
+      }
     }
   }
 }
