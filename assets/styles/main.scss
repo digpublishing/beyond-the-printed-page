@@ -7,8 +7,8 @@
 @import "base/grid-settings";
 @import "lib/neat/neat";
 
-/* Fonts
- * ---------------------------------------------------------------------------*/
+// Fonts
+//---------------------------------------------------------------------------
 // Merriweather
 @include font-face("Merriweather", '{{site.baseurl}}/assets/fonts/merriweather-light', normal);
 @include font-face("Merriweather", '{{site.baseurl}}/assets/fonts/merriweather-lightitalic', normal, italic);
@@ -22,12 +22,18 @@
 // League Spartan
 @include font-face("League Spartan", '{{site.baseurl}}/assets/fonts/leaguespartan-bold', bold);
 
-/* Globals
- * ---------------------------------------------------------------------------*/
+// Globals
+//---------------------------------------------------------------------------
 @import "base/base";
 @import "syntax";
-@import "nav";
+@import "transitions";
 
-/* Layouts
- * ---------------------------------------------------------------------------*/
-@import "layout";
+// Includes
+//---------------------------------------------------------------------------
+@import "includes/nav";
+@import "includes/comments";
+
+// Layouts
+//---------------------------------------------------------------------------
+@import "layouts/global";
+@import "layouts/home";
