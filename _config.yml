@@ -76,3 +76,6 @@ prose:
       - name: "meta"
         field:
           element: "hidden"
+      - name: "type"
+        field:
+          element: "hidden"
