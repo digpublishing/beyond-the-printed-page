@@ -1,3 +1,4 @@
 ---
-title: Beyond the Printed Page
+title: home
+layout: home
 ---
