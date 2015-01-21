@@ -79,4 +79,7 @@ prose:
               value: "epub"
             - name: "Platforms"
               value: "platforms"
-          alterable: "true"
+            - alterable: "true"
+      - name: "date"
+        field:
+          element: "hidden"
