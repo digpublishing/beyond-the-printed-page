@@ -61,19 +61,22 @@ prose:
   ignore: ['.gitignore', '_config.yml', 'test.html', 'Gemfile', 'Gemfile.lock', 'assets', '_includes', '_layouts', '_data']
   metadata:
     _posts:
-    - name: "Layout"
+    - name: "layout"
       field:
         element: "hidden"
         value: post
-    - tags:
+    - name: "tags"
       field:
         element: "multiselect"
         label: "Add Tags"
         placeholder: "Choose Tags"
         alterable: true
-    - date:
+    - name: "date"
         field:
-          element: hidden
+          element: "hidden"
+    - name: "meta"
+        field:
+          element: "hidden"
 
 
 
