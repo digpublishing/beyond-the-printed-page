@@ -70,9 +70,6 @@ prose:
           placeholder: "Your Title Here"
       - name: "author"
         field: 
-        - name: "login"
-          field:
-            element: "hidden"
         - name: "display_name"
           field:
             element: "text"
