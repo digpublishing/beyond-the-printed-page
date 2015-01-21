@@ -64,8 +64,8 @@ prose:
       - name: "title"
         field:
           element: "text"
+          label: "Title"
           value: ""
-          labe: "Title"
           placeholder: "Your Title Here"
       - name: "layout"
         field:
