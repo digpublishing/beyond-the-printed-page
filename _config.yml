@@ -73,6 +73,12 @@ prose:
         - name: "login"
           field:
             element: "hidden"
+        - name: "display_name"
+          field:
+            element: "text"
+            value: ""
+            label: "Author"
+            placeholder: "Author Name"
       - name: "layout"
         field:
           element: "hidden"
