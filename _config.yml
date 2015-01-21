@@ -68,6 +68,11 @@ prose:
           label: "Title"
           value: ""
           placeholder: "Your Title Here"
+      - name: "author"
+        field: 
+        - name: "login"
+          field:
+            element: "hidden"
       - name: "layout"
         field:
           element: "hidden"
