@@ -1,9 +1,41 @@
 // basic page layout
-.layout-top { 
-  background-color: darken($base-accent-color, 24);
+
+$bg-image: '/assets/img/bg/gplaypattern.png';
+$cover-background-top: #6abe82; 
+$cover-background-bottom: #037bba;
+$cover-color: #fff;
+$cover-gradient-angle: 70deg;
+
+body {
+  @include background-image(linear-gradient(
+    $cover-gradient-angle, 
+    $cover-background-bottom, 
+    $cover-background-top)
+  );
+}
+
+.cover { 
+  background-color: transparent;
   color: #fff;
   padding-top: 1rem;
   width: 100%;
+}
+
+.cover:after {
+  @include background-image(url($bg-image), repeat);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1; 
+}
+
+.layout-main {
+  background-color: #fff;
+  opacity: 1;
 }
 
 .content { 
