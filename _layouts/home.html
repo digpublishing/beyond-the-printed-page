@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="home m-scene">
+  <div class="cover">
+    {% include nav.html %}
+    <div class="content scene-element scene-element--fadeout">
+      <header class="article-header">
+        <h1 class="title">{{site.title}}</h1>
+        {% if site.description %}
+          <h4 class="subtitle">{{site.description}}</h4>
+        {% endif %}
+      </header>
+      {{content}}
+    </div>
+  </div>
+<body>
+</html>
