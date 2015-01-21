@@ -61,6 +61,12 @@ prose:
   ignore: ['.gitignore', '_config.yml', 'test.html', 'Gemfile', 'Gemfile.lock', 'assets', '_includes', '_layouts', '_data']
   metadata:
     _posts:
+      - name: "title"
+        field:
+          element: "text"
+          value: ""
+          labe: "Title"
+          placeholder: "Your Title Here"
       - name: "layout"
         field:
           element: "hidden"
@@ -79,3 +85,14 @@ prose:
       - name: "type"
         field:
           element: "hidden"
+      - name: "status"
+        field:
+          element: "hidden"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          help: "Uncheck to make this post hidden."
+          value: true
+          on: "true"
+          off: "false"
