@@ -61,15 +61,22 @@ prose:
   ignore: ['.gitignore', '_config.yml', 'test.html', 'Gemfile', 'Gemfile.lock', 'assets', '_includes', '_layouts', '_data']
   metadata:
     _posts:
-    - name: "published"
+      - name: "layout"
         field:
-          element: "checkbox"
-          label: "Published"
-          help: "Uncheck to make this post hidden."
-          value: true
-          on: "true"
-          off: "false"
-    - name: "layout"
-      field:
-        element: "hidden"
-        value: post
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Conferences"
+              value: "conferences"
+            - name: "Digital Strategy"
+              value: "digital strategy"
+            - name: "ePub"
+              value: "epub"
+            - name: "Platforms"
+              value: "platforms"
+          alterable: "true"
