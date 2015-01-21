@@ -67,19 +67,12 @@ prose:
           value: "post"
       - name: "tags"
         field:
-          element: "multiselect"
+          element: "text"
           label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Conferences"
-              value: "conferences"
-            - name: "Digital Strategy"
-              value: "digital strategy"
-            - name: "ePub"
-              value: "epub"
-            - name: "Platforms"
-              value: "platforms"
-            - alterable: "true"
+          placeholder: "conferences, epub, platforms..."
       - name: "date"
+        field:
+          element: "hidden"
+      - name: "meta"
         field:
           element: "hidden"
