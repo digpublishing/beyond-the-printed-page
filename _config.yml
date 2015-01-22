@@ -60,3 +60,48 @@ defaults:
 prose:
   ignore: ['.gitignore', '_config.yml', 'test.html', 'Gemfile', 'Gemfile.lock', 'assets', '_includes', '_layouts', '_data']
   media: "assets/img"
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          placeholder: "Your Title Here"
+      - name: "author"
+        field: 
+        - name: "display_name"
+          field:
+            element: "text"
+            value: ""
+            label: "Author"
+            placeholder: "Author Name"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Add Tags"
+          placeholder: "conferences, epub, platforms..."
+      - name: "date"
+        field:
+          element: "hidden"
+      - name: "meta"
+        field:
+          element: "hidden"
+      - name: "type"
+        field:
+          element: "hidden"
+      - name: "status"
+        field:
+          element: "hidden"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          help: "Uncheck to make this post hidden."
+          value: true
+          on: "true"
+          off: "false"
