@@ -1,10 +1,12 @@
 ---
 published: true
-title: Yet Another New Post
+title: Here is a New Post Title
 ---
 
-## Here is another new post from prose.
-![426px-Thousand_armed_Kannon_Tosyodaiji-213x300.jpg](/assets/img/426px-Thousand_armed_Kannon_Tosyodaiji-213x300.jpg)
+## A New Post
+
+Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
 Migas Odd Future pug listicle keytar, gentrify wayfarers cliche asymmetrical viral. Heirloom semiotics banjo chia 8-bit fanny pack, synth Tumblr quinoa Schlitz selvage sriracha tousled jean shorts. Gastropub synth Banksy, food truck Wes Anderson normcore iPhone. 8-bit mustache Banksy polaroid, banjo listicle selvage. Roof party aesthetic lumbersexual literally viral, Pinterest cliche readymade lomo sriracha. Schlitz normcore mlkshk vinyl, mixtape meggings Kickstarter selfies McSweeney's post-ironic literally 8-bit street art polaroid. Shabby chic stumptown flannel pop-up cardigan.
 
 Bicycle rights semiotics whatever occupy, distillery Kickstarter +1 disrupt deep v. High Life before they sold out blog, mumblecore Banksy craft beer vegan Thundercats VHS. Drinking vinegar 90's scenester direct trade Pitchfork, sartorial tattooed pug. Pop-up photo booth sustainable gentrify, sartorial YOLO forage cray. Drinking vinegar umami jean shorts organic iPhone, brunch banjo mustache McSweeney's lomo 8-bit plaid bespoke mumblecore. YOLO hoodie quinoa freegan Portland Vice. Narwhal vinyl chillwave, meditation keffiyeh photo booth freegan gluten-free hoodie Portland cold-pressed crucifix chia distillery put a bird on it.
