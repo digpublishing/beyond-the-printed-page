@@ -6,6 +6,12 @@ $cover-background-bottom: #037bba;
 $cover-color: #fff;
 $cover-gradient-angle: 70deg;
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
 body {
   @include background-image(linear-gradient(
     $cover-gradient-angle, 
