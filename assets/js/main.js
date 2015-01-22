@@ -5,7 +5,6 @@ library: jquery-2.1.3.min.js
 // If using a JS framework, include it here
 {% include_relative _lib/{{page.library}} %}
 {% include_relative _lib/jquery.smoothState.js %}
-{% include_relative _lib/viewport-units-buggyfil.js %}
 
 // Application code goes here
 $(document).ready(function(){
@@ -44,8 +43,6 @@ $(document).ready(function(){
       //.data('smoothState') makes public methods available
 })(jQuery);
 
-// Viewport Units Buggyfill
-window.viewportUnitsBuggyfill.init();
 
 // Vanilla JS equivalent of $(document).ready
 //document.addEventListener('DOMContentLoaded', function(){
