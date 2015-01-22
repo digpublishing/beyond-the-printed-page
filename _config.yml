@@ -68,9 +68,6 @@ prose:
         label: "Title"
     - name: "published"
         field:
-          element: "checkbox"
           label: "Published"
-          help: "Uncheck to make this post hidden."
-          value: true
-          on: "true"
-          off: "false"
+          element: "checkbox"
+          value: "true"
