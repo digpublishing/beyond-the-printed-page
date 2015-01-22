@@ -1,0 +1,26 @@
+.footer-wrapper {
+  background-color: #fff;
+  width: 100%;
+}
+
+.site-footer {
+  font-family: 'Lato';
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.home .footer-wrapper, 
+.home .site-footer {
+  background-color: transparent;
+  color: transparentize(#fff, .25);
+
+  a {
+    color: #fff;
+    opacity: .75;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

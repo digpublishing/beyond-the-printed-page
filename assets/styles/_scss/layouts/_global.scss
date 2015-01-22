@@ -12,9 +12,14 @@ body {
     $cover-background-bottom, 
     $cover-background-top)
   );
+
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
 }
 
-.cover { 
+.cover {
+  @include flex(1); 
   background-color: transparent;
   color: #fff;
   padding-top: 1rem;
@@ -42,6 +47,12 @@ body {
   @include outer-container;
   padding: 1rem;
   @include media ($medium-screen-up) { padding: 1rem 2rem; }
+}
+
+.column {
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 12);
+  }
 }
 
 .article-header {
