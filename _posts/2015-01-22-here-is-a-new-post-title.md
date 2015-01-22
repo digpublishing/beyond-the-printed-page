@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Here is a New Post Title
 ---
 
