@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Here is another new post from prose.
