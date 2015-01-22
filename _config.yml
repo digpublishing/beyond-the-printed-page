@@ -48,6 +48,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+      published: true
   -
     scope:
       path: ""
@@ -66,9 +67,3 @@ prose:
       field:
         element: "text"
         label: "Title"
-    - name: "published"
-        field:
-          label: "Published"
-          element: "button"
-          on: "true"
-          off: "false"
