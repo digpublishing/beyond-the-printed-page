@@ -69,5 +69,6 @@ prose:
     - name: "published"
         field:
           label: "Published"
-          element: "checkbox"
-          value: "true"
+          element: "button"
+          on: "true"
+          off: "false"
