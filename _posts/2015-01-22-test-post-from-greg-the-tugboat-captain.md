@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Test Post from Greg the Tugboat Captain
 ---
 
