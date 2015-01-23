@@ -10,17 +10,19 @@
           <img src="{{site.baseurl}}/assets/img/authors/{{author.pic}}">
         </div>
       {% endif %}
-      <h4 class="author-name">{{ author.name }}</h4>
-      {% if author.website %}
+      <div class="author-text">
+        <h5 class="author-name">{{ author.name }}</h5>
+        {% if author.website %}
         <a href="{{author.website['url']}}">{{ author.website["description"] }}</a>
         <br>
-      {% endif %}
-      {% if author.twitter %}
-        <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a>
-      {% endif %}
-      {% if author.bio %}
-        <p class="author-bio">{{ author.bio }}</p>
-      {% endif %}
+        {% endif %}
+        {% if author.twitter %}
+          <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a>
+        {% endif %}
+        {% if author.bio %}
+          <p class="author-bio">{{ author.bio }}</p>
+        {% endif %}
+      </div>
 
       <!-- End Author stub -->
       {% assign author_has_info = true %}

@@ -1,0 +1,33 @@
+.author-info {
+  @include span-columns(12);
+  color: lighten($base-font-color, 25);
+  
+  h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.author-name {
+  margin-top: 0;
+}
+
+.author-pic {
+  @include span-columns(3);
+  @include media($medium-screen-up) {
+    @include span-columns(2);
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.author-text {
+  @include span-columns(9);
+  padding-left: 1em;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+  }
+}
