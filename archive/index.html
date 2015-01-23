@@ -1,0 +1,39 @@
+---
+layout: default
+title: Archive
+---
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h6 class=" archive-meta meta">
+    {{post.date | date: "%-d %B %Y"}}
+    {% if post.author.display_name %}
+      | {{ post.author.display_name }}
+    {% elsif post.author %}
+      | {{ post.author }}
+    {% endif %}
+  </h6>
+  <h3 class="archive-title"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+  <span class="archive-tags meta">{{ post.tags | join: ", "}}</span>
+  <p class="archive-content">
+    {{ post.content | truncatewords: 60, "..." | strip_html }}
+  </p>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  <hr>
+  {% if paginator.previous_page == 1 %}
+    <a href="{{site.baseurl}}/archive" class="previous"> &laquo;Previous</a>
+  {% elsif paginator.previous_page > 1 %}
+    <a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous"> &laquo; Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page-number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">Next &raquo; </a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
