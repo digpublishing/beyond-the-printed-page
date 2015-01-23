@@ -1,0 +1,11 @@
+- name: Justin Putney
+  bio: "Justin Putney is a partner at Ajar Productions and the creator of in5, an InDesign to HTML5 export tool that supports folio overlays and animations. With the open source Baker Framework or similar tools, in5 can also be used to create Adobe DPS-like apps."
+  website: "http://ajarproduction.com/"
+
+- name: Greg Albers
+  bio: "Greg Albers is Digital Publications Manager at the Getty and also a tugboat captain."
+  website: 
+    description: Digital Publishing Bliki
+    url: "http://digitalpublishingbliki.com/"
+  twitter: geealbers
+  pic: greg_albers.jpg

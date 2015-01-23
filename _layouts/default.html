@@ -19,8 +19,10 @@
         {% if page.subtitle %}
           <h4 class="subtitle">{{page.subtitle}}</h4>
         {% endif %}
-        {% if page.author %}
+        {% if page.author.display_name %}
           <h5 class="author">By {{page.author.display_name}}</h5>
+        {% elsif page.author %}
+          <h5 class="author">By {{page.author}}</h5>
         {% endif %}
       </header>
     </div>

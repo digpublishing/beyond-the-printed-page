@@ -1,0 +1,38 @@
+{% if page.author %}
+  {% assign author_has_info = false %}
+  <div class="author-info">
+  {% for author in site.data.authors %}
+    {% if page.author == author.name %}
+      <!-- Begin Author stub -->
+      <h4>About the Author</h4>
+      {% if author.pic %}
+        <div class="author-pic">
+          <img src="{{site.baseurl}}/assets/img/profiles/{{author.pic}}">
+        </div>
+      {% endif %}
+      <h4 class="author-name">{{ author.name }}</h4>
+      {% if author.website %}
+        <a href="{{author.website['url']}}">{{ author.website["description"] }}</a>
+        <br>
+      {% endif %}
+      {% if author.twitter %}
+        <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a>
+      {% endif %}
+      {% if author.bio %}
+        <p class="author-bio">{{ author.bio }}</p>
+      {% endif %}
+
+      <!-- End Author stub -->
+      {% assign author_has_info = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% unless author_has_info == true %}
+    {% if page.author.display_name %}
+      <em>By {{page.author.display_name}}</em>
+    {% else %}
+      <em>By {{page.author}}</em>
+    {% endif %}
+  {% endunless %}
+  </div>
+{% endif %}
