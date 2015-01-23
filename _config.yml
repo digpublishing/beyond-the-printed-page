@@ -32,6 +32,10 @@ collections:
     output: true
     permalink: /:path/
 
+# Pagination
+#==================================
+paginate: 5
+paginate_path: "/archive/page/:num"
 
 # Front-matter Defaults
 #==================================

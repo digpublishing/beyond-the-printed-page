@@ -83,6 +83,40 @@ body {
   .intro { margin-bottom: $base-font-size * 3; }
 }
 
+// archive page
+.pagination {
+  @include span-columns(12);
+}
+
+.previous,
+.next,
+.page-number {
+  @include span-columns(4);
+}
+
+.previous {
+  text-align: left;
+}
+
+.next {
+  text-align: right;
+}
+
+.page-number {
+  text-align: center;
+}
+
+span.archive-tags {
+  display: block;
+  font-size: $base-font-size * .9;
+  letter-spacing: 1px;
+  margin-top: .75rem;
+}
+
+.archive-content {
+  margin-bottom: 2.5rem;
+}
+
 // responsive video
 .video-wrapper {
   height: 0;
