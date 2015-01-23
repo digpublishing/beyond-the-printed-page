@@ -1,16 +1,15 @@
 ---
-Title: Tags
+title: Tags
 permalink: /tags/
-layout: home
+layout: default
 ---
-<h2>Tags</h2>
 <ul>
   {% for item in site.tags %}
     <hr>
     <h4>{{item[0]}}</h4>
     <br>
     {% for content in item[1] %}
-      {{content.title}}
+      <a href="{{site.baseurl}}{{content.url}}">{{content.title}}</a>
       <br>
     {% endfor %} 
   {% endfor %}
