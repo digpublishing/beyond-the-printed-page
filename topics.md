@@ -6,7 +6,7 @@ layout: default
 <ul>
   {% for tag in site.tags %}
     <hr>
-    <h4 id="{{tag[0]}}">{{tag[0]}}</h4>
+    <h4 id="{{tag[0]}}">{{tag[0] | upcase}}</h4>
     <br>
     {% for tagged_post in tag[1] %}
       <a href="{{site.baseurl}}{{tagged_post.url}}">{{tagged_post.title}}</a>
