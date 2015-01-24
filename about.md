@@ -18,34 +18,21 @@ Finally, the open source technology driving the new BTPP promises to offer excit
 
 ###BTPP Team
 
-Greg Albers, J. Paul Getty Trust
-
-Eric Gardner, J. Paul Getty Trust
-
-Liz Neely, Museum Computer Network
-
-Amy Weber Parkolap, Art Institue of Chicago
-
-Rob Weisberg, Metropolitan Museum of Art
+- Greg Albers, J. Paul Getty Trust
+- Eric Gardner, J. Paul Getty Trust
+- Liz Neely, Museum Computer Network
+- Amy Weber Parkolap, Art Institue of Chicago
+- Rob Weisberg, Metropolitan Museum of Art
 
 ###Contributors
 
-Stephanie Grimes
-
-Rosanna Flouty
-
-Justin Putney
-
-Kris Thayer
-
-Diane Richard
-
-Tina Henderson
-
-Patrick Phillips
-
-Leah Triplett
-
-Matt Mayerchak
-
-Joseph Mohan
+- Stephanie Grimes
+- Rosanna Flouty
+- Justin Putney
+- Kris Thayer
+- Diane Richard
+- Tina Henderson
+- Patrick Phillips
+- Leah Triplett
+- Matt Mayerchak
+- Joseph Mohan
