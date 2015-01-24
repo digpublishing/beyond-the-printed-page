@@ -1,0 +1,12 @@
+<h6 class=" archive-meta meta">
+  {{post.date | date: "%-d %B %Y"}}
+  {% if post.author.display_name %}
+    | {{ post.author.display_name }}
+  {% elsif post.author %}
+    | {{ post.author }}
+  {% endif %}
+</h6>
+<h4 class="archive-title"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
+<span class="archive-tags meta">
+  {% include tags.html %}
+</span>

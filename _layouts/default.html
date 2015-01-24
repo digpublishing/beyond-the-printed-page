@@ -6,12 +6,9 @@
     {% include nav.html %}
     <div class="content">
       <header class="article-header">
-        {% if page.number %}
-          <h3 class="meta">Issue {{page.number}} | {{page.date}}</h3>
-        {% elsif page.category %}
-          {% capture issue_num %} {{ page.category | remove_first:'issue-'  }} {% endcapture %}
-          <a href="{{site.baseurl}}/{{page.category}}">
-            <h6 class="meta">Issue {{issue_num}}</h6>
+        {% if page.categories[0] %}
+          <a href="{{site.baseurl}}/{{page.categories[0]}}">
+            <h4 class="meta">{{page.categories[0] | upcase | replace: "-", " "}}</h4>
           </a>
           <br>
         {% endif %}
@@ -20,14 +17,14 @@
           <h4 class="subtitle">{{page.subtitle}}</h4>
         {% endif %}
         {% if page.author.display_name %}
-          <h5 class="author">By {{page.author.display_name}}</h5>
+          <h5 class="author">By {{page.author.display_name}} | {{page.date | date: "%-d %B %Y"}}</h5>
         {% elsif page.author %}
-          <h5 class="author">By {{page.author}}</h5>
+          <h5 class="author">By {{page.author}} | {{page.date | date: "%-d %B %Y"}}</h5>
         {% endif %}
       </header>
     </div>
   </div>
-  <div class="layout-main scene-element scene-element--fadeinup scene-element--fadeout">
+  <div class="layout-main scene-element">
     <div class="content" id="main">
       {{content}}
     </div>

@@ -2,6 +2,11 @@
 layout: default
 ---
 <article>
+  <span class="meta">Filed under </span>
+  {% for tag in page.tags %}
+    <a class="tag-link badge-notice" href="{{site.baseurl}}/topics#{{tag}}">{{tag}}</a>
+  {% endfor %}
+  <hr>
   {{content}}
   {% include authors.html %}
 </article>

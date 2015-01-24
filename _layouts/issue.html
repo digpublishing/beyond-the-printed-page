@@ -2,20 +2,17 @@
 layout: default
 ---
 {{content}}
-<h4>Contents</h4>
+<h3>Contents</h3>
 <br>
 {% capture current_issue %}issue-{{page.number}}{% endcapture %}
 {% if site.categories[current_issue] %}
   {% assign sorted_articles = site.categories[current_issue] | sort: "rank" %}
-  <ul class="articles">
-  {% for article in sorted_articles %}
-    <li>
-      <a href="{{site.baseurl}}{{article.url}}"><h4>{{article.title}}</h4></a>
-      <h6>{{article.author.display_name}}</h6>
-      <p>{{article.desc}}</p>
-    </li>
+  <!-- <ul class="articles"> -->
+  {% for post in sorted_articles %}
+    {% include results.html %}
+    <hr>
   {% endfor %}
-  </ul>
+  <!-- </ul> -->
 {% else %}
   <p>No articles exist in this issue yet.</p>
 {% endif %}
