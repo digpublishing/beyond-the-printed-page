@@ -1,11 +1,33 @@
-- name: Justin Putney
-  bio: "Justin Putney is a partner at Ajar Productions and the creator of in5, an InDesign to HTML5 export tool that supports folio overlays and animations. With the open source Baker Framework or similar tools, in5 can also be used to create Adobe DPS-like apps."
-  website: "http://ajarproduction.com/"
 
 - name: Greg Albers
-  bio: "Greg Albers is Digital Publications Manager at the Getty and also a tugboat captain."
+  bio: "Digital Publications Manager at the Getty. Former publisher of Hol Art Books. Creator of the People's E-Book. Lover of tugboats."
   website: 
     description: Digital Publishing Bliki
     url: "http://digitalpublishingbliki.com/"
   twitter: geealbers
   pic: geealbers.jpg
+
+- name: Robert Weisberg
+  bio: "Senior Project Manager, Editorial Department at The Metropolitan Museum of Art."
+  twitter: @beyondDTP
+  pic: beyonddtp.jpg
+
+- name: Tina Henderson
+  bio: "Involved in the design and production of print art books since 1993 and digital books since 2010. Dual-orientation Multi-touch ibooks are her current obsession."
+  website: "http://tinahenderson.com/"
+  twitter: @tinahender
+  pic: tinahender.jpg
+
+- name: Amy Weber Parkolap
+  bio: "Project Coordinator for the Online Scholarly Catalogue Initiative at the Art Institute of Chicago."
+  website:
+    description: AIC Online Catalogues
+    url: "http://www.artic.edu/research/digital-publications/online-scholarly-catalogues"
+  pic: awparkolap.jpg
+
+- name: Justin Putney
+  bio: "Designer, animator, developer, speaker, author, Adobe Community Professional, entrepreneur, and minimalist runner."
+  website: "http://ajarproduction.com/"
+  pic: jputney.jpgEmail: justin@ajarproductions.com
+Twitter: @justinputney
+Website: http://www.ajarproductions.com/  
