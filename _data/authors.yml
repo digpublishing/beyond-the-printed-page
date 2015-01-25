@@ -13,18 +13,22 @@
 
 - name: Tina Henderson
   bio: "Involved in the design and production of print art books since 1993 and digital books since 2010. Dual-orientation Multi-touch ibooks are her current obsession."
-  website: "http://tinahenderson.com/"
+  website:
+    description: Tina Henderson LLC
+    url: "http://tinahenderson.com/"
   twitter: tinahender
   pic: tinahender.jpg
 
 - name: Amy Weber Parkolap
   bio: "Project Coordinator for the Online Scholarly Catalogue Initiative at the Art Institute of Chicago."
   website:
-    description: AIC Online Catalogues
+    description: Art Institute of Chicago's Online Scholarly Catalogues 
     url: "http://www.artic.edu/research/digital-publications/online-scholarly-catalogues"
   pic: awparkolap.jpg
 
 - name: Justin Putney
   bio: "Designer, animator, developer, speaker, author, Adobe Community Professional, entrepreneur, and minimalist runner."
-  website: "http://ajarproduction.com/"
+  website: 
+    description: Ajar Productions
+    url: "http://ajarproductions.com/"
   pic: jputney.jpg
