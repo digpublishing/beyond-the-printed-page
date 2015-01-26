@@ -4,7 +4,8 @@ permalink: /topics/
 layout: default
 ---
 <ul>
-  {% for tag in site.tags %}
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
     <h4 id="{{tag[0]}}" class="meta">{{tag[0] | upcase}}</h4>
     <br>
     {% for tagged_post in tag[1] %}
