@@ -1,14 +1,18 @@
 .author-info {
   @include span-columns(12);
-  color: lighten($base-font-color, 25);
+  //color: lighten($base-font-color, 25);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
   
   h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     text-align: center;
   }
 }
 
 .author-name {
+  margin-bottom: .25rem;
   margin-top: 0;
 }
 
