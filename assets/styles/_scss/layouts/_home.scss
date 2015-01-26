@@ -13,8 +13,35 @@ body.home {
     color: #fff;
   }
 
-  .subtitle {
-    margin-top: .35rem;
+  .site-subtitle {
+    font-size: 1.5em;
+    margin-top: .5em;
+  }
+
+  // a:link,
+  // a:visited, {
+  //   color: $cover-link-color;
+  // }
+
+  // a:hover,
+  // a:active {
+  //   color: $cover-link-color-hover;
+  // }
+}
+
+.issue-link {
+  font-family: 'Lato';
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+  a:link,
+  a:visited {
+    color: transparentize(#fff, .15);
+  }
+
+  a:hover,
+  a:active {
+    color: #fff;
   }
 }
 
@@ -31,15 +58,9 @@ body.home {
 }
 
 .current-issue {
-  margin-top: 5rem;
-}
-
-.current {
-  border-top: 2px solid #fff;
-  padding-top: 1rem;
-}
-
-.current-issue-date {
   border-bottom: 2px solid #fff;
-  padding-bottom: 1rem;
+  border-top: 2px solid #fff;
+  margin-top: 5rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
 }

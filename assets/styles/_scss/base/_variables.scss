@@ -7,6 +7,10 @@ $cover-background-bottom: #037bba;
 $cover-color: #fff;
 $cover-gradient-angle: 70deg;
 
+// $cover-link-base-color: #DAEDFF;
+// $cover-link-color: transparentize($cover-link-base-color, .25);
+// $cover-link-color-hover: $cover-link-base-color;
+
 // Typography
 //=======================================================
 $sans-serif: "League Spartan", $helvetica;
@@ -87,7 +91,7 @@ $base-z-index: 0;
 
 // Colors
 //=======================================================
-$blue: #477dca;
+$blue: #3586CA;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;

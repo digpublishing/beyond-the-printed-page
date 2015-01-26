@@ -6,9 +6,9 @@
     {% include nav.html %}
     <div class="content scene-element scene-element--fadeout">
       <header class="article-header">
-        <h1 class="title">{{site.title}}</h1>
+        <h1 class="site-title">{{site.title}}</h1>
         {% if site.description %}
-          <h2 class="subtitle meta">{{site.description}}</h2>
+          <h4 class="site-subtitle meta">{{site.description}}</h4>
         {% endif %}
       </header>
       {{content}}
