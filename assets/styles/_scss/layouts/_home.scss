@@ -1,0 +1,45 @@
+body.home {
+  min-height: 100vh;
+}
+
+.cover {
+  @include flex(1); 
+  background-color: transparent;
+  color: #fff;
+  padding-top: 1rem;
+  width: 100%;
+
+  .meta {
+    color: #fff;
+  }
+
+  .subtitle {
+    margin-top: .35rem;
+  }
+}
+
+.cover:after {
+  @include background-image(url($bg-image), repeat);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1; 
+}
+
+.current-issue {
+  margin-top: 5rem;
+}
+
+.current {
+  border-top: 2px solid #fff;
+  padding-top: 1rem;
+}
+
+.current-issue-date {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem;
+}
