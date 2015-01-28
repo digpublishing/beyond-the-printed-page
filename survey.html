@@ -3,32 +3,34 @@ title: Publications
 layout: default
 permalink: /survey/
 ---
-<div>
-<table id="pubs_survey" class="survey tablesorter" style="width:100%">
-  <thead>
+<div id="pubs_survey">
+<table class="survey" style="width:100%">
+  <thead class="table-controls">
     <tr>
-      <th class="row-title" colspan="3" data-tsorter="pub_title">Title</th>
-      <th colspan="2" data-tsorter="link">Institution</th> 
-      <th>Type</th>
-      <th>Format</th>
-      <th>Price</th>
+      <th colspan="3"><a href="#" class="sort" data-sort="title">Title</a></th>
+      <th colspan="2"><a href="#" class="sort" data-sort="institution">Institution</a></th> 
+      <th><a href="#" class="sort" data-sort="type">Type</a></th>
+      <th><a href="#" class="sort" data-sort="format">Format</a></th>
+      <th><a href="#" class="sort" data-sort="price">Price</a></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="list">
   {% assign sorted_data = site.data.survey | sort:"institution" %}
   {% for item in sorted_data %}
   <tr>
-    <td class="row-title title" colspan="3">
+    <td class="title" colspan="3">
     {% if item.purchase_url %}
       <a href="{{item.purchase_url}}">{{item.title}}</a>
     {% else %}
       {{item.title}}
     {% endif %}
     </td>
-    <td colspan="2" class="institution"><a href="{{item.publisher_url}}">{{item.institution}}</a></td> 
-    <td>{{item.type}}</td>
-    <td>{{item.format}}</td>
-    <td>{{item.price}}</td>
+    <td colspan="2" class="institution">
+      <a href="{{item.publisher_url}}">{{item.institution}}</a>
+    </td> 
+    <td class="type">{{item.type}}</td>
+    <td class="format">{{item.format}}</td>
+    <td class="price">{{item.price}}</td>
   </tr>
   {% endfor %}
   </tbody>
