@@ -5,6 +5,7 @@ library: jquery-2.1.3.min.js
 // If using a JS framework, include it here
 {% include_relative _lib/{{page.library}} %}
 {% include_relative _lib/jquery.smoothState.js %}
+{% include_relative _lib/tsorter.js %}
 
 // Application code goes here
 $(document).ready(function(){
@@ -19,7 +20,23 @@ $(document).ready(function(){
     $('.js-menu-screen').toggleClass('is-visible');
     e.preventDefault();
   });
+
+  table_init();
+
 });
+
+// tablesort
+function table_init() {
+  tsorter.create('pubs_survey', 0, {
+    pub_title: function(row){  
+      return parseFloat( this.getCell(row).childNodes[1].nodeValue, 10 );
+    }
+  });
+
+
+
+}
+
 
 // smoothstate JS
 ;(function($) {
@@ -44,7 +61,3 @@ $(document).ready(function(){
 })(jQuery);
 
 
-// Vanilla JS equivalent of $(document).ready
-//document.addEventListener('DOMContentLoaded', function(){
-//
-//});

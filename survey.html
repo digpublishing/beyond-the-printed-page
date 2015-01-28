@@ -3,28 +3,35 @@ title: Publications
 layout: default
 permalink: /survey/
 ---
-<table class="survey" style="width:100%">
-  <tr>
-    <th class="row-title" colspan="3">Title</th>
-    <th colspan="2">Institution</th> 
-    <th>Type</th>
-    <th>Format</th>
-    <th>Price</th>
-  </tr>
+<div>
+<!-- {% include search_tools.html %} -->
+<table id="pubs_survey" class="survey tablesorter" style="width:100%">
+  <thead>
+    <tr>
+      <th class="row-title" colspan="3" data-tsorter="pub_title">Title</th>
+      <th colspan="2" data-tsorter="link">Institution</th> 
+      <th>Type</th>
+      <th>Format</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
   {% assign sorted_data = site.data.survey | sort:"institution" %}
   {% for item in sorted_data %}
   <tr>
-    <td class="row-title" colspan="3">
+    <td class="row-title title" colspan="3">
     {% if item.purchase_url %}
       <a href="{{item.purchase_url}}">{{item.title}}</a>
     {% else %}
       {{item.title}}
     {% endif %}
     </td>
-    <td colspan="2"><a href="{{item.publisher_url}}">{{item.institution}}</a></td> 
+    <td colspan="2" class="institution"><a href="{{item.publisher_url}}">{{item.institution}}</a></td> 
     <td>{{item.type}}</td>
     <td>{{item.format}}</td>
     <td>{{item.price}}</td>
   </tr>
   {% endfor %}
+  </tbody>
 </table>
+</div>
