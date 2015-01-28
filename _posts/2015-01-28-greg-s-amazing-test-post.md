@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 title: "Greg's Test Post"
 ---
 
-## Greg's Test Post
+## Greg's Amazing Test Post
 
 Kitten Ipsum dolor sit amet cat, tortor fuzzy dui standing dui dolor. Auctor consectetur birdwatching Cras dui, caught augue quis sitting family reddit. House, dictum varius vitae buddy local smokey eget other. Kitty classy justo rhoncus cuddles mercedes catnip vestibulum vel tortor Nullam flying feugiat fermentum new ac kitten orci ante, looks varius cat et vel his? Ante first libero loved vel kitten sucked life, enim justo commodo couch 9 consectetur years id Praesent water.
 
