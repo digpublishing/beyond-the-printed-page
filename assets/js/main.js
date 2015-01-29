@@ -13,17 +13,19 @@ library: jquery-2.1.3.min.js
 
 // Application scripts
 $(document).ready(function(){
-  $('.js-menu-trigger').on('click touchstart', function(e){
-    $('.js-menu').toggleClass('is-visible');
-    $('.js-menu-screen').toggleClass('is-visible');
+
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
     e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
   });
 
-  $('.js-menu-screen').on('click touchstart', function(e){
-    $('.js-menu').toggleClass('is-visible');
-    $('.js-menu-screen').toggleClass('is-visible');
-    e.preventDefault();
-  });
   
   setUpTable();
 
