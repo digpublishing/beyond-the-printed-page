@@ -17,7 +17,9 @@ body {
 }
 
 #main {
-  min-height: 45vh;
+  @include media($medium-screen-up) {
+    min-height: 65vh;
+  }
 }
 
 .layout-main {
@@ -126,7 +128,17 @@ span.archive-tags {
   padding: .5rem .75rem .5rem 0;
 }
 
+.survey-search {
+  font-family: "Lato";
+  padding: 1rem 1.25rem;
+  border-radius: $base-border-radius;
+  line-height: 1;
 
+  input {
+    font-family: "Lato";
+    margin-bottom: 0;
+  }
+}
 
 
 
