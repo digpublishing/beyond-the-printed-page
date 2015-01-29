@@ -5,7 +5,7 @@ library: jquery-2.1.3.min.js
 // Libraries
 {% include_relative _lib/{{page.library}} %}
 {% include_relative _lib/jquery.smoothState.js %}
-{% include_relative _lib/list.min.js %}
+{% include_relative _lib/list.js %}
 
 // Initialization scripts
 {% include_relative smoothstate_init.js %}
