@@ -1,34 +1,39 @@
+{% if page.author[1] %}
+  {% assign multiple_authors = true %}
+{% endif %}
 {% if page.author %}
-  {% assign author_has_info = false %}
   <div class="author-info">
+  <h4 class="meta">About the Author{% if multiple_authors %}s{% endif %}</h4>
   <hr>
-  {% for author in site.data.authors %}
-    {% if page.author == author.name %}
-      <!-- Begin Author stub -->
-      <h4 class="meta">About the Author</h4>
-      {% if author.pic %}
-        <div class="author-pic">
-          <img src="{{site.baseurl}}/assets/img/authors/{{author.pic}}">
+  {% for name in page.author %}
+    {% for author in site.data.authors %}
+      {% if name == author.name %}
+        <!-- Begin Author stub -->
+        <div class="author-info">
+          {% if author.pic %}
+            <div class="author-pic">
+              <img src="{{site.baseurl}}/assets/img/authors/{{author.pic}}">
+            </div>
+          {% endif %}
+          <div class="author-text">
+            <h5 class="author-name">{{ author.name }}</h5>
+            {% if author.website %}
+            <a href="{{author.website['url']}}">{{ author.website["description"] }}</a>
+            <br>
+            {% endif %}
+            {% if author.twitter %}
+              <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a>
+            {% endif %}
+            {% if author.bio %}
+              <p class="author-bio smaller">{{ author.bio }}</p>
+            {% endif %}
+          </div>
         </div>
-      {% endif %}
-      <div class="author-text">
-        <h5 class="author-name">{{ author.name }}</h5>
-        {% if author.website %}
-        <a href="{{author.website['url']}}">{{ author.website["description"] }}</a>
-        <br>
-        {% endif %}
-        {% if author.twitter %}
-          <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a>
-        {% endif %}
-        {% if author.bio %}
-          <p class="author-bio smaller">{{ author.bio }}</p>
-        {% endif %}
-      </div>
 
-      <!-- End Author stub -->
-      {% assign author_has_info = true %}
-      {% break %}
-    {% endif %}
+        <!-- End Author stub -->
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endfor %}
   </div>
 {% endif %}
