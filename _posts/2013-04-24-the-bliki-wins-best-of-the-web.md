@@ -1,6 +1,6 @@
 ---
 title: Congratulations! The Bliki wins Best of the Web for 'Best Museum Professional
-  Website'.
+ Website'.
 date: 2013-04-24 
 tags:
 - awards/reviews/news
