@@ -18,7 +18,14 @@
         {% if page.subtitle %}
           <h4 class="subtitle">{{page.subtitle}}</h4>
         {% endif %}
-        {% if page.author.display_name %}
+        {% if page.author[1] %}
+          <h5 class="author">By 
+            {% for name in page.author %}
+              {{name}}{% unless forloop.last %},{% endunless %}
+              {% if forloop.last %} | {{page.date | date: "%-d %B %Y"}} {% endif %}
+            {% endfor %}
+          </h5>
+        {% elsif page.author.display_name %}
           <h5 class="author">By {{page.author.display_name}} | {{page.date | date: "%-d %B %Y"}}</h5>
         {% elsif page.author %}
           <h5 class="author">By {{page.author}} | {{page.date | date: "%-d %B %Y"}}</h5>
