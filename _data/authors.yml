@@ -32,3 +32,15 @@
     description: Ajar Productions
     url: "http://ajarproductions.com/"
   pic: jputney.jpg
+
+- name: Kris Thayer
+  bio: "Audience engagement strategist and senior designer at the Minneapolis Institute of Arts"
+  email: kthayer@artsmia.org
+  twitter: kristhayer11
+  pic: kristhayer11.jpg
+
+- name: Diane Richard
+  bio: "Audience engagement strategist and writer at the Minneapolis Institute of Arts"
+  email: drichard@artsmia.org
+  twitter: 2bzer
+  pic: 2bzer.jpg
