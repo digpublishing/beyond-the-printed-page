@@ -29,6 +29,14 @@ body {
   @include outer-container;
   padding: 1rem;
   @include media ($medium-screen-up) { padding: 1rem 2rem; }
+
+  article img,
+  article iframe {
+    display: block;
+    margin-bottom: .5em;
+    //width: 100%;
+  }
+
 }
 
 .column {
