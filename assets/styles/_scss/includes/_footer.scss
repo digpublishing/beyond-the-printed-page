@@ -1,5 +1,5 @@
 .footer-wrapper {
-  @include flex(1);
+  //@include flex(1);
   background-color: #fff;
   width: 100%;
 }
@@ -10,6 +10,29 @@
   padding-bottom: 1.5rem;
   padding-top: 1rem;
   width: 100%;
+}
+
+.footer-contributors {
+  @include span-columns(8);
+
+  > p {
+    display: block;
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.footer-social {
+  @include span-columns(4);
+  > li {
+    display: block;
+    float: right;
+    margin-left: 1rem;
+
+    img {
+      height: 2rem;
+    }
+  }
 }
 
 .home .site-footer {

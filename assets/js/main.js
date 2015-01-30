@@ -27,11 +27,10 @@ library: jquery-2.1.3.min.js
 // });
 
 var req = $.getJSON("{{site.baseurl}}/test.json")
-.done(
+  .done(console.log("Finished"), 
   function() {
-    window.json = req.responseJSON;
-  };
-);
+    window.json = req.responseJSON
+  });
 
 // Application scripts
 $(document).ready(function(){
