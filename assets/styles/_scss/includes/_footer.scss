@@ -10,15 +10,12 @@
   padding-bottom: 1.5rem;
   padding-top: 1rem;
   width: 100%;
-
-  @include media($medium-screen-up) {
-    //height: 75px;
-  }
-
 }
 
 .footer-contributors {
-  @include span-columns(9);
+  @include media($medium-screen-up) {
+    @include span-columns(8);
+  }
 
   > p {
     display: block;
@@ -28,9 +25,12 @@
 }
 
 .footer-social {
-  @include span-columns(3);
-  margin: 1.75em 0;
-  text-align: right;
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+    @include omega;
+    text-align: right;
+    margin: 1.75em 0;
+  }
 
   a {
     opacity: .75;
@@ -41,7 +41,9 @@
   }
 
   span {
-    margin-right: .15em;
+    @include media($medium-screen-up) {
+      @include span-columns(1 of 3);
+    }
   }
 
   > li {
@@ -58,7 +60,7 @@
     color: #fff;
     
     .fa-circle {
-      color: transparentize($cover-background-bottom, 0.5);
+      color: transparentize($cover-background-bottom, .5);
     }
   }
 }
@@ -82,7 +84,7 @@
 
 .home .footer-social {
   .fa-stack {
-    color: transparentize($cover-background-top, 0.25);
+    color: transparentize($cover-background-top, .25);
     
     .fa-circle {
       color: #fff;

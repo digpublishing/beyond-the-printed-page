@@ -12,26 +12,6 @@ library: jquery-2.1.3.min.js
 {% include_relative smoothstate_init.js %}
 {% include_relative set_up_table.js %}
 
-
-// $.getJSON( "{{site.baseurl}}/test.json", function( data ) {
-//   var items = [];
-//   $.each( data, function( key, val ) {
-//     items.push( "<li id='" + key + "'>" + val + "</li>" );
-//   });
-//   console.log("JSON loaded");
- 
-  // $( "<ul/>", {
-  //   "class": "my-new-list",
-  //   html: items.join( "" )
-  // }).appendTo( "search-results" );
-// });
-
-var req = $.getJSON("{{site.baseurl}}/test.json")
-  .done(console.log("Finished"), 
-  function() {
-    window.json = req.responseJSON
-  });
-
 // Application scripts
 $(document).ready(function(){
 

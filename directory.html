@@ -30,7 +30,7 @@ permalink: /directory/
     </tr>
   </thead>
   <tbody class="list">
-  {% assign sorted_data = site.data.survey | sort:"institution" %}
+  {% assign sorted_data = site.data.survey | sort:"title" %}
   {% for item in sorted_data %}
   <tr>
     <td class="title" colspan="3">
@@ -47,7 +47,7 @@ permalink: /directory/
     <td class="format">{{item.format}}</td>
     <td class="price">
       {% if item.price == "0" %}
-        Free
+        <span class="free"><span class="zero">{{item.price | prepend: "$"}}</span></span>
       {% elsif item.price contains "£" %}
         {{item.price }}
       {% else %}
