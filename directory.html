@@ -34,18 +34,26 @@ permalink: /directory/
   {% for item in sorted_data %}
   <tr>
     <td class="title" colspan="3">
-    {% if item.purchase_url %}
-      <a href="{{item.purchase_url}}">{{item.title}}</a>
+    {% if item.publication_url %}
+      <a href="{{item.publication_url}}">{{item.title}}</a>
     {% else %}
       {{item.title}}
     {% endif %}
     </td>
     <td colspan="2" class="institution">
-      <a href="{{item.publisher_url}}">{{item.institution}}</a>
+      <a href="{{item.institution_url}}">{{item.institution}}</a>
     </td> 
     <td class="type">{{item.type}}</td>
     <td class="format">{{item.format}}</td>
-    <td class="price">{{item.price}}</td>
+    <td class="price">
+      {% if item.price == "0" %}
+        Free
+      {% elsif item.price contains "£" %}
+        {{item.price }}
+      {% else %}
+        {{item.price | prepend: "$"}}
+      {% endif %}
+    </td>
   </tr>
   {% endfor %}
   </tbody>
