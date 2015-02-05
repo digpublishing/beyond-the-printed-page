@@ -14,19 +14,29 @@ permalink: /directory/
   <thead class="table-controls">
     <tr>
       <th colspan="3">
-        <a href="#" class="sort" data-sort="title" data-insensitive="true">Title</a>
+        <a href="javascript:void(0);" class="sort" data-sort="title" data-insensitive="true">
+          <i class="fa fa-sort"></i> &nbsp; Title
+        </a>
       </th>
       <th colspan="2">
-        <a href="#" class="sort" data-sort="institution" data-insensitive="true">Institution</a>
+        <a href="javascript:void(0);" class="sort" data-sort="institution" data-insensitive="true">
+          <i class="fa fa-sort"></i> &nbsp; Institution
+        </a>
       </th> 
       <th>
-        <a href="#" class="sort" data-sort="type" data-insensitive="true">Type</a>
+        <a href="javascript:void(0);" class="sort" data-sort="type" data-insensitive="true">
+          <i class="fa fa-sort"></i> &nbsp; Type
+        </a>
       </th>
       <th>
-        <a href="#" class="sort" data-sort="format" data-insensitive="true">Format</a>
+        <a href="javascript:void(0);" class="sort" data-sort="format" data-insensitive="true">
+          <i class="fa fa-sort"></i> &nbsp; Format
+        </a>
       </th>
       <th>
-        <a href="#" class="sort" data-sort="price" data-insensitive="true">Price</a>
+        <a href="javascript:void(0);" class="sort" data-sort="price" data-insensitive="true">
+          <i class="fa fa-sort"></i> &nbsp; Price
+        </a>
       </th>
     </tr>
   </thead>
@@ -36,13 +46,17 @@ permalink: /directory/
   <tr>
     <td class="title" colspan="3">
     {% if item.publication_url %}
-      <a href="{{item.publication_url}}">{{item.title}}</a>
+      <a href="{{item.publication_url}}">
+        {{item.title}} &nbsp; &nbsp;<i class="fa fa-external-link"></i>
+      </a>
     {% else %}
       {{item.title}}
     {% endif %}
     </td>
     <td colspan="2" class="institution">
-      <a href="{{item.institution_url}}">{{item.institution}}</a>
+      <a href="{{item.institution_url}}">
+        {{item.institution}} &nbsp; &nbsp;<i class="fa fa-external-link"></i>
+      </a>
     </td> 
     <td class="type">{{item.type}}</td>
     <td class="format">{{item.format}}</td>

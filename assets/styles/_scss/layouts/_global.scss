@@ -27,6 +27,20 @@ body {
   opacity: 1;
 }
 
+.button-standard {
+  font-family: "Lato", $sans-serif;
+  @include button(pill, lighten($base-link-color, 15));
+
+  &:link, &:visited {
+    color: transparentize(#fff, .15);
+  }
+
+  &:hover, &:active {
+    color: #fff;
+  }
+
+}
+
 .content { 
   @include outer-container;
   padding: 1rem;

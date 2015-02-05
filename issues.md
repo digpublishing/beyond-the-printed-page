@@ -11,3 +11,6 @@ permalink: /issues/
   <br />
   {% endfor %}
 </ul>
+<a class="badge-notice" href="{{site.baseurl}}/archive/">
+  View Archive &nbsp;<i class="fa fa-arrow-right"></i>
+</a>
