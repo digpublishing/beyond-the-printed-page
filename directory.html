@@ -15,12 +15,12 @@ permalink: /directory/
     <tr>
       <th colspan="3">
         <a href="javascript:void(0);" class="sort" data-sort="title" data-insensitive="true">
-          <i class="fa fa-sort"></i> &nbsp; Title
+          <i class="fa fa-sort"></i> &nbsp; Title &nbsp; &nbsp;<i class="fa fa-external-link"></i>
         </a>
       </th>
       <th colspan="2">
         <a href="javascript:void(0);" class="sort" data-sort="institution" data-insensitive="true">
-          <i class="fa fa-sort"></i> &nbsp; Institution
+          <i class="fa fa-sort"></i> &nbsp; Institution &nbsp; &nbsp;<i class="fa fa-external-link"></i>
         </a>
       </th> 
       <th>
@@ -47,7 +47,7 @@ permalink: /directory/
     <td class="title" colspan="3">
     {% if item.publication_url %}
       <a href="{{item.publication_url}}">
-        {{item.title}} &nbsp; &nbsp;<i class="fa fa-external-link"></i>
+        {{item.title}}</i>
       </a>
     {% else %}
       {{item.title}}
@@ -55,7 +55,7 @@ permalink: /directory/
     </td>
     <td colspan="2" class="institution">
       <a href="{{item.institution_url}}">
-        {{item.institution}} &nbsp; &nbsp;<i class="fa fa-external-link"></i>
+        {{item.institution}}</i>
       </a>
     </td> 
     <td class="type">{{item.type}}</td>

@@ -9,5 +9,6 @@ function setUpTable(){
     var numResults = $("#pubs_survey tbody tr").length;
     $(".results").text(numResults);
   });
+  $('table.survey').stickyTableHeaders();
 }
 

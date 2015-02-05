@@ -132,34 +132,3 @@ span.archive-tags {
   }
 }
 
-// survey table
-.survey {
-  font-size: $base-font-size * .75;
-  font-family: "Lato";
-}
-
-.survey td {
-  padding: .5rem .75rem .5rem 0;
-}
-
-.survey-search {
-  font-family: "Lato";
-  padding: 1rem 1.25rem;
-  border-radius: $base-border-radius;
-  line-height: 1;
-
-  input {
-    font-family: "Lato";
-    margin-bottom: 0;
-  }
-}
-
-.free:before {
-  content: "Free";
-}
-
-.zero {
-  display: none;
-}
-
-

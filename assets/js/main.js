@@ -7,6 +7,7 @@ library: jquery-2.1.3.min.js
 {% include_relative _lib/jquery.smoothState.js %}
 {% include_relative _lib/list.js %}
 {% include_relative _lib/lunr.min.js %}
+{% include_relative _lib/jquery.stickytableheaders.min.js %}
 
 // Initialization scripts
 {% include_relative smoothstate_init.js %}
