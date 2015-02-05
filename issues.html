@@ -2,9 +2,6 @@
 title: Issues
 permalink: /issues/
 ---
-<p><a class="badge-notice" href="{{site.baseurl}}/archive/">
-View Post Archive &nbsp;<i class="fa fa-arrow-right"></i>
-</a></p>
 <ul>
   {% for issue in site.issues %}
   <li>
@@ -13,4 +10,13 @@ View Post Archive &nbsp;<i class="fa fa-arrow-right"></i>
   </li>
   <br />
   {% endfor %}
+  <li>
+    <h6>Archive</h6>
+    <a href="{{site.baseurl}}/archive"><h3>All Posts 2012–Present</h3></a>
+  </li>
+  <br>
+  <li>
+    <h6>Topics</h6>
+    <a href="{{site.baseurl}}/archive"><h3>Posts by Topic</h3></a>
+  </li>
 </ul>

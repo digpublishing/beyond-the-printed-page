@@ -17,9 +17,7 @@ body {
 }
 
 #main {
-  @include media($medium-screen-up) {
-    min-height: 65vh;
-  }
+  min-height: 65vh;
 }
 
 .layout-main {
@@ -43,14 +41,18 @@ body {
 
 .content { 
   @include outer-container;
-  padding: 1rem;
-  @include media ($medium-screen-up) { padding: 1rem 2rem; }
+  padding: 0 1rem;
+  @include media ($medium-screen-up) { padding: 0 2rem; }
 
   article img,
   article iframe {
     display: block;
     margin-bottom: .5em;
     //width: 100%;
+  }
+
+  article > * {
+    margin-top: 1rem;
   }
 
 }

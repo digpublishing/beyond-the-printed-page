@@ -1,0 +1,32 @@
+<div class="breadcrumb-wrapper">
+  <div class="breadcrumbs">
+  {% if page.categories[0] %}
+      <a href="{{site.baseurl}}/">BTPP</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <a href="{{site.baseurl}}/issues">Issues</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <a href="{{site.baseurl}}/{{page.categories[0]}}">
+        {{page.categories[0] | capitalize | replace: "-", " "}}
+      </a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <span>{{page.title | truncate: 68, '...'}}</span>
+  {% elsif page.number %}
+      <a href="{{site.baseurl}}/">BTPP</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <a href="{{site.baseurl}}/issues">Issues</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <span>Issue {{page.number}}</span>
+  {% elsif page.id %}
+      <a href="{{site.baseurl}}/">BTPP</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <a href="{{site.baseurl}}/archive">Archive</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+      <span>{{page.title | truncate: 68, '...'}}</span>    
+  {% elsif page.title == "Archive"%}
+    <a href="{{site.baseurl}}/">BTPP</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+    <a href="{{site.baseurl}}/issues">Issues</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+    <span>{{page.title | truncate: 68, '...'}}</span>
+  {% elsif page.title == "Topics" %}
+    <a href="{{site.baseurl}}/">BTPP</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+    <a href="{{site.baseurl}}/issues">Issues</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+    <span>{{page.title | truncate: 68, '...'}}</span>
+  {% else %}
+    <a href="{{site.baseurl}}/">BTPP</a>
+    &nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+    <span>{{page.title | truncate: 68, '...'}}</span>
+  {% endif %}
+  </div>
+</div>

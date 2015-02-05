@@ -1,0 +1,14 @@
+.breadcrumb-wrapper {
+  height: 60px;
+  background-color: transparentize(#fff, .65);
+}
+
+.breadcrumbs {
+  @include outer-container;
+  padding: 1rem 2rem;
+  font-family: 'Lato';
+  line-height: 1.15;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
