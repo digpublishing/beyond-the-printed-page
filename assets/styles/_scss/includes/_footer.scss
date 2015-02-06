@@ -81,6 +81,7 @@
   a {
     color: #fff;
     opacity: .75;
+    border-bottom: solid 1px #fff;
 
     &:hover {
       opacity: 1;
@@ -93,6 +94,10 @@
 }
 
 .home .footer-social {
+  a {
+    border-bottom: none;
+  }
+
   .fa-stack {
     color: transparentize($cover-background-top, .25);
     
